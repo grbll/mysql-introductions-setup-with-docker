@@ -16,10 +16,10 @@ ALTER TABLE users
 
 INSERT INTO colors (
   name
-) VALUES ( "blue" ), ( "red" ), ( "green" )
+) VALUES ( "blue" ), ( "red" ), ( "green" );
 
 INSERT INTO users (
   name,
   flag,
   favorite_color
-) VALUES ( "hans", TRUE, 2 ), ("susi", FALSE, 2), ("ben", FALSE, "1")
+) VALUES ( "hans", TRUE, 2 ), ("susi", FALSE, 2), ("ben", FALSE, "1");
