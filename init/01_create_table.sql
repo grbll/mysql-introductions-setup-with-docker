@@ -11,5 +11,5 @@ CREATE TABLE IF NOT EXISTS colors (
 );
 
 ALTER TABLE users
-  ADD COLUMN favorite_color,
-  ADD FOREIGN KEY (favorite_color) REFERENCE colors(id);
+  ADD COLUMN favorite_color INT,
+  ADD FOREIGN KEY (favorite_color) REFERENCES colors(id);
