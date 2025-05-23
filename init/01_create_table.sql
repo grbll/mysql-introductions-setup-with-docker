@@ -1,4 +1,4 @@
-USE mydb;
+-- USE mydb;
 CREATE TABLE IF NOT EXISTS users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
@@ -7,10 +7,9 @@ CREATE TABLE IF NOT EXISTS users (
 
 CREATE TABLE IF NOT EXISTS colors (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
+  name VARCHAR(255) NOT NULL
 );
 
-ALTER TABLE users (
+ALTER TABLE users
   ADD COLUMN favorite_color,
-  ADD FOREIGN KEY (favorite_color) REFERENCE colors(id),
-);
+  ADD FOREIGN KEY (favorite_color) REFERENCE colors(id);
